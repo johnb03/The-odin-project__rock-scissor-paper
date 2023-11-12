@@ -88,14 +88,3 @@ function randomSelection() {
   return SELECTIONS[randomIndex];
 }
 
-//animation
-
-
-
-gsap.registerPlugin(ScrollTrigger) 
-
-gsap.to(".container", {
-  scrollTrigger: ".container", // start animation when ".box" enters the viewport
-  markers:true,
-  x:500,
-});
