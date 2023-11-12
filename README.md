@@ -17,5 +17,5 @@
 4. **Google fonts** for typography.
 ---
 ## Demo 
-Here[]()
-![preview]()
+[Click Here](https://zesty-nasturtium-a71109.netlify.app/)
+![preview](/FireShot%20Capture%20057%20-%20Project%20-%20Rock%20-%20Paper%20-%20Scissor%20-%20127.0.0.1.png)
