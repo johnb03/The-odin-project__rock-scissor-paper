@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/rock-papaer,scisor/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <section id="hero_section">
+      <div class="hero">
+        <img class="sun" src="http://drive.google.com/uc?export=view&id=1FVFcqAoqJZciGlPBUFz3Ek18Ui92nEJ8" alt="">
+
+        <h1 class="hero__title">This is a story of pride and passion</h1>
+        <img src="http://drive.google.com/uc?export=view&id=1FF3EOTr3fmcfvnMX4ltGArT9pzrOmsiQ" alt=""
+          class="hero__bg-image">
+      </div>
+    </section>
+<div class="box-animation">
+  
+      <section id="sect-2 panel">
+        <div class="choice">
+          <h2 class="sect-2__title">stone, paper or scissors is your choice</h2>
+          <img src="http://drive.google.com/uc?export=view&id=16lwKSIIheXzCOE8vqL3b0daidD5_qaEo" alt=""
+            class="sect-2__img">
+        </div>
+      </section>
+  
+      <section id="sect-3 panel">
+        <div class="choice-2">
+          
+          <div class="box-play">
+            <div class="sect-3__fight">
+              <h2 class="sect-3__title">fight</h2>
+              <img src="http://drive.google.com/uc?export=view&id=16Zhlxhjljwohg3pfW48M_h2LUf0eOsoS" alt="underline"
+                class="underline">
+            </div>
+
+            <div class="buttons">
+              <button data-selection="rock"><img
+                  src="http://drive.google.com/uc?export=view&id=1s7d2IwWkYv8ZsxHUfTaLNV-aza_8wpjW" alt="rock"></button>
+              <button data-selection="paper"><img
+                  src="http://drive.google.com/uc?export=view&id=1Jagkzrn1nnCTXnnryBl6QpE8FHuw0-9W" alt="paper"></button>
+              <button data-selection="scisor"><img
+                  src="http://drive.google.com/uc?export=view&id=1x6YmSSOVwihqFNcGiD-kkbF5mHL6rCNI" alt="scissor"></button>
+            </div>
+        </div>
+
+
+
+        <div class="score">
+          <p> User <spam class="score__user" data-your-score>0</spam>
+          </p>
+
+          <p> Enemy <spam class="score__enemy" data-computer-score>0</spam>
+          </p>
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+
+
+  </div>
+  <script src="/rock-papaer,scisor/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- animation -->
+  <script>
+
+
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.defaults({ease:"none", duration: 2,})
+    const tl =  gsap.timeline();
+    tl.from(".choice-2",{xPercent: -100 , delay:0})
+
+    
+    gsap.to(".choice",{
+      scrollTrigger: {
+      trigger:".choice",
+       toggleActions:"restart  pause pause reverse", 
+      },
+        opacity:0, 
+       ease:"true",
+       delay:0.5,
+      });
+  
+
+    ScrollTrigger.create({
+      animation:tl,
+      trigger:".box-animation",
+      start:"top top",
+     end: "1000px",
+     markers:true,
+      pin:true,
+      toggleActions:"restart pause pause reverse"
+      
+    });
+
+  
+
+
+       
+  </script>
+</body>
+
+</html>

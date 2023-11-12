@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Poppins:wght@300;500&display=swap");
+
+/* resset */
+html {
+  box-sizing: border-box;
+
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: "Poppins", sans-serif;
+}
+
+section{
+  display: inline;
+ 
+}
+
+
+.container{
+
+  width: 98%;
+  min-width:320px;
+  margin: 0 auto;
+  
+  
+  
+}
+
+
+.hero{
+  
+  display:inline-block;
+  width:100%;
+  height:100vh;
+
+}
+
+.sun{
+  width: 40%;
+  height: auto;
+}
+
+
+.hero__title{
+ text-transform: uppercase;
+  font-size:2.2rem;
+  padding:.5rem;
+ 
+}
+.hero__bg-image{
+  width:100%;
+  height: auto;
+}
+
+
+.choice{
+ 
+
+    width:100%;
+  height:100vh;
+  display:flex;
+flex-direction:column;
+ justify-content:flex-start;
+  align-items:center;
+}
+.sect-2__title{
+  font-size:2rem;
+  padding: 1.2rem;
+}
+.sect-2__img{
+  width: 60%;
+  height:auto;
+}
+
+
+.choice-2{
+  width: 100%;
+    height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+  gap: 3rem;
+}
+.sect-3__fight{
+  height:200px;
+
+}
+.sect-3__title{
+  font-size:4rem;
+}
+.underline{
+  position:relative;
+  margin:0;
+  bottom:8rem;
+}
+
+
+.buttons{
+  width:100%;
+  min-width:350px;
+  display: flex;
+  justify-content:center;
+ flex-wrap:wrap;
+  gap:3rem;
+}
+
+
+.buttons button{
+  width:140px;
+  border:none;
+  background:none;
+}
+
+ button:hover{
+  cursor:pointer;
+}
+
+ button:active{
+  transform:scale(0.8);
+}
+.buttons button img{
+  width:100%;
+  height:auto;
+}
+
+
+.score{
+  width:100%;
+  display: flex;
+  justify-content:center;
+  gap: 3rem;
+  margin-top: 40px;
+  
+}
+
+.score p{
+  font-size:1.5rem;
+  
+}
+.score p spam{
+  font-size:3rem;
+ 
+}
+
+
+.sect-reset{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+ background:black;
+}
+
+.sect-reset{
+    animation-name: action;
+    animation-duration:1s ;
+    animation-delay: 0.5;
+}
+.reset{
+ display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+  height:250px;
+  width:100%;
+  background:white;
+  padding:20px;
+}
+
+.reset button{
+  padding:8px 20px;
+  margin-top:10px;
+  border-radius:4px;
+  
+  
+  color:#ffff;
+  background:#111;
+  font-weight:bold;
+  text-transform:uppercase;
+  
+  
+}
+
+@keyframes action {
+   0%{
+    opacity: 0;
+    transform: scale(2);
+   } 
+}
+
+
+.box-animation{
+  position: relative;
+}
+
+.choice{
+  position: absolute;
+  
+
+}
+.choice-2{
+  position: absolute;
+ width: 100%;
+ /* background-color: #ffff; */
+}
